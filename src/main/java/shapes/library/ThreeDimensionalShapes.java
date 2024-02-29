@@ -2,24 +2,24 @@ package shapes.library;
 
 public class ThreeDimensionalShapes {
     public static class Cube {
-        public static double getSurfaceArea(double edgeLength) {
-            return 6.0 * Math.pow(edgeLength, 2.0);
+        public static double getSurfaceArea(double sideLength) {
+            return 6.0 * Math.pow(sideLength, 2.0);
         }
 
-        public static double getVolume(double edgeLength) {
-            return Math.pow(edgeLength, 3.0);
+        public static double getVolume(double sideLength) {
+            return Math.pow(sideLength, 3.0);
         }
 
-        public static double getSpaceDiagonal(double edgeLength) {
-            return Math.sqrt(3.0) * edgeLength;
+        public static double getSolidDiagonal(double sideLength) {
+            return Math.sqrt(3.0) * sideLength;
         }
 
-        public static double getEdgeLength(double surfaceArea) {
+        public static double getSideLength(double surfaceArea) {
             return Math.sqrt(surfaceArea / 6.0);
         }
     }
 
-    public static class RightRectangularPrism {
+    public static class RectangularPrism {
         public static double getSurfaceArea(double length, double width, double height) {
             return 2 * ((width * length) + (height * length) + (height * width));
         }
@@ -28,20 +28,8 @@ public class ThreeDimensionalShapes {
             return width * height * length;
         }
 
-        public static double getSpaceDiagonal(double length, double width, double height) {
+        public static double getSolidDiagonal(double length, double width, double height) {
             return Math.sqrt(Math.pow(length, 2.0) + Math.pow(width, 2.0) + Math.pow(height, 2.0));
-        }
-
-        public static double getLength(double width, double height, double spaceDiagonal) {
-            return Math.sqrt(Math.pow(spaceDiagonal, 2.0) - Math.pow(height, 2.0) - Math.pow(width, 2.0));
-        }
-
-        public static double getWidth(double length, double height, double spaceDiagonal) {
-            return Math.sqrt(Math.pow(spaceDiagonal, 2.0) - Math.pow(height, 2.0) - Math.pow(length, 2.0));
-        }
-        
-        public static double getHeight(double length, double width, double spaceDiagonal) {
-            return Math.sqrt(Math.pow(spaceDiagonal, 2.0) - Math.pow(length, 2.0) - Math.pow(width, 2.0));
         }
     }
 
