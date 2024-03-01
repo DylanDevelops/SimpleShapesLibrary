@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-Simple Shapes is a Java based library for calculating various measurements in regards to 3D and 2D shapes.
+  <em>Simple Shapes is a Java based library for calculating various measurements in regards to 3D and 2D shapes.</em>
 </p>
 
 ## Getting Started
