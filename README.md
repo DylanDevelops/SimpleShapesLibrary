@@ -1,6 +1,5 @@
 <p align="center">
   <a href="https://github.com/DylanDevelops/SimpleShapesLibrary">
-      <img width="20%" src="https://i.pinimg.com/originals/63/1b/dd/631bddd5cfd2afa86b80dfbab547e214.png" alt="Simple Shapes Logo" />
       <h1 align="center">Simple Shapes Library</h1>
   </a>
 </p>
