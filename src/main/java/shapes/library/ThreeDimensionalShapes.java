@@ -50,4 +50,58 @@ public class ThreeDimensionalShapes {
             return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3.0);
         }
     }
+
+    public static class Pyramid {
+        public static double getVolume(double baseLength, double baseWidth, double pyramidHeight) {
+            return (baseLength * baseWidth * pyramidHeight) / (3.0);
+        }
+
+        public static double getBaseArea(double baseLength, double baseWidth) {
+            return baseLength * baseWidth;
+        }
+
+        public static double getSurfaceArea(double baseLength, double baseWidth, double pyramidHeight) {
+            return baseLength + baseWidth + baseLength * Math.sqrt(Math.pow(baseWidth / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0)) + baseWidth * Math.sqrt(Math.pow(baseWidth / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0));
+        }
+
+        public static double getLateralSurfaceArea(double baseLength, double baseWidth, double pyramidHeight) {
+            return baseLength * Math.sqrt(Math.pow(baseWidth / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0)) + baseWidth * Math.sqrt(Math.pow(baseLength / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0));
+        }
+    }
+
+    public static class Cone {
+        public static double getVolume(double radius, double height) {
+            return Math.PI * Math.pow(radius, 2.0) * (height / 3.0);
+        }
+
+        public static double getBaseArea(double radius) {
+            return Math.PI * Math.pow(radius, 2.0);
+        }
+
+        public static double getSurfaceArea(double radius, double height) {
+            return Math.PI * radius * (radius + Math.sqrt(Math.pow(height, 2.0) + Math.pow(radius, 2.0)));
+        }
+
+        public static double getLateralSurfaceArea(double radius, double height) {
+            return Math.PI * radius * Math.sqrt(Math.pow(height, 2.0) + Math.pow(radius, 2.0));
+        }
+    }
+
+    public static class TriangularPrism {
+        public static double getVolume(double baseSide1, double baseSide2, double baseSide3, double height) {
+            return (1.0 / 4.0) * height * Math.sqrt(-Math.pow(baseSide1, 4.0) + 2.0 * Math.pow(baseSide1 * baseSide2, 2.0) + 2.0 * Math.pow(baseSide1 * baseSide3, 2.0) - Math.pow(baseSide2, 4.0) + 2.0 * Math.pow(baseSide2 * baseSide3, 2.0) - Math.pow(baseSide3, 4.0));
+        }
+
+        public static double getBaseArea(double baseSide1, double baseSide2, double baseSide3) {
+            return (1.0 / 4.0) * Math.sqrt(-Math.pow(baseSide1, 4.0) + 2.0 * Math.pow(baseSide1 * baseSide2, 2.0) + 2.0 * Math.pow(baseSide1 * baseSide3, 2.0) - Math.pow(baseSide2, 4.0) + 2.0 * Math.pow(baseSide2 * baseSide3, 2.0) - Math.pow(baseSide3, 4.0));
+        }
+
+        public static double getSurfaceArea(double baseSide1, double baseSide2, double baseSide3, double height) {
+            
+        }
+
+        public static double getLateralSurfaceArea(double baseSide1, double baseSide2, double baseSide3, double height) {
+            return (baseSide1 + baseSide2 + baseSide3) * height;
+        }
+    }
 }
