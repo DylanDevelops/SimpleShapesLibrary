@@ -181,7 +181,7 @@ public class ThreeDimensionalShapes {
          * @return A double representing the volume of the pyramid.
          */
         public static double getVolume(double baseLength, double baseWidth, double pyramidHeight) {
-            return (baseLength * baseWidth * pyramidHeight) / (3.0);
+            return (getBaseArea(baseLength, baseWidth) * pyramidHeight) / (3.0);
         }
 
         /**
@@ -208,7 +208,7 @@ public class ThreeDimensionalShapes {
          * @return A double representing the surface area of the pyramid.
          */
         public static double getSurfaceArea(double baseLength, double baseWidth, double pyramidHeight) {
-            return baseLength + baseWidth + baseLength * Math.sqrt(Math.pow(baseWidth / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0)) + baseWidth * Math.sqrt(Math.pow(baseWidth / 2.0, 2.0) + Math.pow(pyramidHeight, 2.0));
+            return getLateralSurfaceArea(baseLength, baseWidth, pyramidHeight) + getBaseArea(baseLength, baseWidth);
         }
 
         /**
@@ -244,7 +244,7 @@ public class ThreeDimensionalShapes {
          * @return A double representing the volume of the cone.
          */
         public static double getVolume(double radius, double height) {
-            return Math.PI * Math.pow(radius, 2.0) * (height / 3.0);
+            return getBaseArea(radius) * (height / 3.0);
         }
 
         /**
