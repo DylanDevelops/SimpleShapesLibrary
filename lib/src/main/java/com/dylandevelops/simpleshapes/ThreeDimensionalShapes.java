@@ -1,4 +1,4 @@
-package shapes.library;
+package com.dylandevelops.simpleshapes;
 
 /**
  * The class containing information and calculations relating
