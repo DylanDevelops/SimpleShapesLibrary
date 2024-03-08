@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'SimpleShapesLibrary'
-include('lib')
+include('SimpleShapesLibrary')
