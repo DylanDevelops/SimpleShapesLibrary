@@ -1,7 +1,6 @@
 package com.dylandevelops.simpleshapes;
 
 import org.junit.jupiter.api.Test;
-import com.dylandevelops.simpleshapes.ThreeDimensionalShapes;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ThreeDimensionalShapesTests {
