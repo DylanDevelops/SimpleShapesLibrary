@@ -13,7 +13,9 @@
 <p align="center">
   <a href="https://github.com/DylanDevelops/SimpleShapesLibrary/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/DylanDevelops/SimpleShapesLibrary?style=for-the-badge"></a>
   <a href="https://www.codefactor.io/repository/github/dylandevelops/simpleshapeslibrary/overview/main"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/DylanDevelops/SimpleShapesLibrary?style=for-the-badge"></a>
+  <a href="https://github.com/DylanDevelops/SimpleShapesLibrary/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/DylanDevelops/SimpleShapesLibrary?style=for-the-badge"></a>
   <a href="https://makeapullrequest.com/"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge"></a>
+</p>
 
 ## Getting Started
 
