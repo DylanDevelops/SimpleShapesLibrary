@@ -40,3 +40,5 @@ bin/
 
 # MAC SPECIFIC STUFF
 *.DS_Store
+
+!gradle/wrapper/gradle-wrapper.jar
