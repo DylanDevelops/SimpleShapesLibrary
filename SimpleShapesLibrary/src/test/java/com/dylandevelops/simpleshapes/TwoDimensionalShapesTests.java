@@ -1,7 +1,7 @@
-package shapes.library;
+package com.dylandevelops.simpleshapes;
 
 import org.junit.jupiter.api.Test;
-
+import com.dylandevelops.simpleshapes.TwoDimensionalShapes;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TwoDimensionalShapesTests {

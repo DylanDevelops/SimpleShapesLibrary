@@ -1,11 +1,11 @@
-package shapes.library;
+package com.dylandevelops.simpleshapes;
 
 /**
  * The class containing information and calculations relating
  * to two dimensional shapes.
  * 
  * @author Dylan Ravel
- * @since 1.0
+ * @since 0.1.0
  */
 public class TwoDimensionalShapes {
     /**
