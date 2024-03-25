@@ -12,7 +12,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'com.dylandevelops.simpleshapes'
+group 'io.github.dylandevelops'
 version '0.1.0'
 
 repositories {
@@ -57,15 +57,41 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
+
+            groupId = 'io.github.dylandevelops'
+            artifactId = 'simpleshapes'
+            version = '0.1.0'
+
+            pom {
+                name = 'Simple Shapes Library'
+                description = 'Simple Shapes is a Java based library for calculating various measurements in regards to 3D and 2D shapes.'
+                url = 'https://github.com/DylanDevelops/SimpleShapesLibrary'
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'https://github.com/DylanDevelops/SimpleShapesLibrary?tab=MIT-1-ov-file'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'dylandevelops'
+                        name = 'Dylan R.'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/DylanDevelops/SimpleShapesLibrary.git'
+                    developerConnection = 'scm:git:ssh://github.com/DylanDevelops/SimpleShapesLibrary.git'
+                    url = 'https://github.com/DylanDevelops/SimpleShapesLibrary/tree/main'
+                }
+            }
         }
     }
     repositories {
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/DylanDevelops/SimpleShapesLibrary")
+            url = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+                username = project.findProperty("ossrhUsername") ?: System.getenv("OSSRH_USERNAME")
+                password = project.findProperty("ossrhPassword") ?: System.getenv("OSSRH_PASSWORD")
             }
         }
     }

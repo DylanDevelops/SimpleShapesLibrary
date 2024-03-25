@@ -1,4 +1,4 @@
-package com.dylandevelops.simpleshapes;
+package io.github.dylandevelops.simpleshapes;
 
 /**
  * The class containing information and calculations relating
