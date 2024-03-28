@@ -56,7 +56,6 @@ tasks.named('jar') {
 nexusPublishing {
     repositories {
         sonatype {
-            //only for users registered in Sonatype after 24 Feb 2021
             nexusUrl.set(uri("https://s01.oss.sonatype.org/service/local/"))
             snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
             username = project.findProperty("ossrhUsername") ?: System.getenv("OSSRH_USERNAME")
@@ -72,7 +71,7 @@ publishing {
 
             groupId = 'io.github.dylandevelops'
             artifactId = 'simpleshapes'
-            version = '0.1.0'
+            version = project.version
 
             pom {
                 name = 'Simple Shapes Library'
@@ -81,7 +80,7 @@ publishing {
                 licenses {
                     license {
                         name = 'MIT License'
-                        url = 'https://github.com/DylanDevelops/SimpleShapesLibrary?tab=MIT-1-ov-file'
+                        url = 'https://github.com/DylanDevelops/SimpleShapesLibrary/blob/main/LICENSE'
                     }
                 }
                 developers {
@@ -95,15 +94,6 @@ publishing {
                     developerConnection = 'scm:git:ssh://github.com/DylanDevelops/SimpleShapesLibrary.git'
                     url = 'https://github.com/DylanDevelops/SimpleShapesLibrary/tree/main'
                 }
-            }
-        }
-    }
-    repositories {
-        maven {
-            url = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
-            credentials {
-                username = project.findProperty("ossrhUsername") ?: System.getenv("OSSRH_USERNAME")
-                password = project.findProperty("ossrhPassword") ?: System.getenv("OSSRH_PASSWORD")
             }
         }
     }
