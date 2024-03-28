@@ -1,7 +1,9 @@
 <p align="center">
   <img src="https://github.com/DylanDevelops/SimpleShapesLibrary/assets/48571264/fe4d198a-aa82-4e0c-927d-5312f2993bd6" style="display: block; margin-left: auto; margin-right: auto; width: 15%; height: 75%; border-radius: 25px;">
+</p>
 
 <p align="center">
+  !!! STILL IN ACTIVE DEVELOPMENT !!!
   <a href="https://github.com/DylanDevelops/SimpleShapesLibrary">
       <h1 align="center">Simple Shapes Library</h1>
   </a>
